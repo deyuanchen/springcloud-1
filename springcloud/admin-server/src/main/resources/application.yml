@@ -16,8 +16,14 @@ management:
     health:
       show-details: ALWAYS
 
-
 spring:
+  mail:
+    host: smtp.qq.com
   boot:
-    admin:
-      context-path: /admin
+      admin:
+        notify:
+          mail:
+            to: 958954776@qq.com
+
+
+
